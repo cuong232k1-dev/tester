@@ -1,0 +1,94 @@
+
+[{
+  "expectedOutPut" : 4611686014132420000,
+  "input1" : 2147483647,
+  "input2" : 2147483647
+  },
+  {
+    "expectedOutPut" : 4611686011984937500,
+    "input1" : 2147483647,
+    "input2" : 2147483646
+  },
+  {
+    "expectedOutPut" : 0,
+    "input1" : 2147483647,
+    "input2" : 0
+  },
+  {
+    "expectedOutPut" : 2147483647,
+    "input1" : 2147483647,
+    "input2" : 1
+  },
+
+
+
+
+  {
+    "expectedOutPut" : 4611686011984937500,
+    "input1" : 2147483646,
+    "input2" : 2147483647
+  },
+  {
+    "expectedOutPut" : 4611686009837453300,
+    "input1" : 2147483646,
+    "input2" : 2147483646
+  },
+  {
+    "expectedOutPut" : 0,
+    "input1" : 2147483646,
+    "input2" : 0
+  },
+  {
+    "expectedOutPut" : 2147483646,
+    "input1" : 2147483646,
+    "input2" : 1
+  },
+
+
+
+
+  {
+    "expectedOutPut" : 0,
+    "input1" : 0,
+    "input2" : 2147483647
+  },
+  {
+    "expectedOutPut" : 0,
+    "input1" : 0,
+    "input2" : 2147483646
+  },
+  {
+    "expectedOutPut" : 0,
+    "input1" : 0,
+    "input2" : 0
+  },
+  {
+    "expectedOutPut" : 0,
+    "input1" : 0,
+    "input2" : 1
+  },
+
+
+
+
+  {
+    "expectedOutPut" : 2147483647,
+    "input1" : 1,
+    "input2" : 2147483647
+  },
+  {
+    "expectedOutPut" : 2147483646,
+    "input1" : 1,
+    "input2" : 2147483646
+  },
+  {
+    "expectedOutPut" : 0,
+    "input1" : 1,
+    "input2" : 0
+  },
+  {
+    "expectedOutPut" : 1,
+    "input1" : 1,
+    "input2" : 1
+  }
+]

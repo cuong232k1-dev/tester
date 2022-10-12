@@ -1,0 +1,49 @@
+Bài toán tìm diện tích hình chữ nhật với cạnh A và B
+
+Kiểm thử tương đương
+
+ta có 0<=A<maxINT là miền giá trị đúng của A và còn lại là sai
+tương tự với B
+ => testCase:
+ A = 10 B = -5
+ A = 10 B= 10
+ A = -5 B = 10
+ A = -5 B = -10
+
+kiểm thử biên
+max A = max INT
+max -A = max INT -1;
+min A = 0;
+min -A = 1;
+
+
+max B = max INT
+max -B = max INT -1;
+min B= 0;
+min -B= 1;
+
+TestCase(max A,max B)
+TestCase(max A,max -B)
+TestCase(max A,min B)
+TestCase(max A,min -B)
+
+TestCase(max -A,max B)
+TestCase(max -A,max -B)
+TestCase(max -A,min B)
+TestCase(max -A,min -B)
+
+
+TestCase(min  A,max B)
+TestCase(min  A,max -B)
+TestCase(min  A,min B)
+TestCase(min  A,min -B)
+
+
+TestCase(min -A,max B)
+TestCase(min -A,max -B)
+TestCase(min -A,min B)
+TestCase(min -A,min -B)
+
+
+
+
