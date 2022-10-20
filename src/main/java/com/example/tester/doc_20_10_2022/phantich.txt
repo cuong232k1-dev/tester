@@ -1,0 +1,6 @@
+kiem thu C2 là kiểm thử lựa chọn các đường đi sao cho đi qua tất cả các nhánh
+=> theo biểu đồ ví dụ có 2 nhánh => 2 ca kiểm thử
+ a >=0 và b>=0 = > {10,10}
+ a<0 hoặc b<0 => {-1,10}
+
+ file test case : testCaseC2.json

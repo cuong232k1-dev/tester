@@ -49,32 +49,28 @@ public class Test {
     public void testOne() throws Exception {
         /*Kiem thử tương đương*/
         String filePath = "src/main/java/com/example/tester/testcase.json";
-        JSONParser jsonParser = new JSONParser(new FileReader(filePath));
-        ArrayList<Object> testCases = jsonParser.parseArray();
-        TestCase test;
-        ObjectMapper objectMapper = new ObjectMapper();
-        int index = 0;
-        for (Object x : testCases) {
-            test = objectMapper.convertValue(x, TestCase.class);
-            assertEqual(index, test.getExpectedOutPut(), Action.tinhDienTichHinhChuNhat(test.getInput1(), test.getInput2()));
-            index++;
-        }
+        processTest(filePath);
     }
     @org.junit.Test
     public void testTWO() throws Exception {
         /*Kiem thử tương đương*/
         String filePath = "src/main/java/com/example/tester/testcase1.json";
-        JSONParser jsonParser = new JSONParser(new FileReader(filePath));
-        ArrayList<Object> testCases = jsonParser.parseArray();
-        TestCase test;
-        ObjectMapper objectMapper = new ObjectMapper();
-        int index = 0;
-        for (Object x : testCases) {
-            test = objectMapper.convertValue(x, TestCase.class);
-            assertEqual(index, test.getExpectedOutPut(), Action.tinhDienTichHinhChuNhat(test.getInput1(), test.getInput2()));
-            index++;
-        }
+        processTest(filePath);
     }
+
+
+
+    /*
+    test with C2
+    20-10-2022
+     */
+    @org.junit.Test
+    public void testWithC2() throws Exception {
+        /*Kiem thử tương đương*/
+        String filePath = "src/main/java/com/example/tester/doc_20_10_2022/testCaseC2.json";
+        processTest(filePath);
+    }
+
     private void assertEqual(int indexOfTestCase,  long expectedOutPut, long outPut) {
         if (expectedOutPut == outPut) {
             System.out.println("INDEX OF TEST CASE " + indexOfTestCase + ": PASS");
@@ -92,6 +88,19 @@ public class Test {
     @AfterClass
     public static void tearDownAfterClass() throws Exception {
         System.out.println("after class");
+    }
+
+    private  void processTest(String filePath) throws Exception{
+        JSONParser jsonParser = new JSONParser(new FileReader(filePath));
+        ArrayList<Object> testCases = jsonParser.parseArray();
+        TestCase test;
+        ObjectMapper objectMapper = new ObjectMapper();
+        int index = 0;
+        for (Object x : testCases) {
+            test = objectMapper.convertValue(x, TestCase.class);
+            assertEqual(index, test.getExpectedOutPut(), Action.tinhDienTichHinhChuNhat(test.getInput1(), test.getInput2()));
+            index++;
+        }
     }
 
 }

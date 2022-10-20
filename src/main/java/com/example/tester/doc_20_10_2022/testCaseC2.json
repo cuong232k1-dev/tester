@@ -1,0 +1,11 @@
+[{
+  "expectedOutPut" : 100,
+  "input1" : 10,
+  "input2" : 10
+},
+  {
+    "expectedOutPut" : -1,
+    "input1" : -1,
+    "input2" : 10
+  }
+]
