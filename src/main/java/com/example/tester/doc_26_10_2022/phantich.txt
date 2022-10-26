@@ -1,0 +1,10 @@
+def a = 1
+def b = 1
+c use x và y đều 4 , 5
+p use x và y đều à 2
+
+=> all -  c -use x  :1 - 2 (F) - 4 - 5
+ all -c-use y :như trên
+
+  some p -use x và y như nhau : 1 2(T) 3
+  => test case trong file testcase26-10.json

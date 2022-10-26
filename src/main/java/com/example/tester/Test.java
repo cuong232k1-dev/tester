@@ -71,6 +71,20 @@ public class Test {
         processTest(filePath);
     }
 
+    @org.junit.Test
+    public void testWithAllCUses() throws Exception {
+        /*Kiem thử tương đương*/
+        String filePath = "src/main/java/com/example/tester/doc_26_10_2022/testcase26_10_all-c-uses.json";
+        processTest(filePath);
+    }
+
+    @org.junit.Test
+    public void testWithSomePUses() throws Exception {
+        /*Kiem thử tương đương*/
+        String filePath = "src/main/java/com/example/tester/doc_26_10_2022/testcase26_10_some-p-uses.json";
+        processTest(filePath);
+    }
+
     private void assertEqual(int indexOfTestCase,  long expectedOutPut, long outPut) {
         if (expectedOutPut == outPut) {
             System.out.println("INDEX OF TEST CASE " + indexOfTestCase + ": PASS");
